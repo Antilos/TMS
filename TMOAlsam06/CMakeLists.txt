@@ -21,8 +21,8 @@ tmo
 ##########
 #Eigen
 ##########
-#set(EIGEN_DIR /usr/local/include/eigen3/)
-#include_directories(${EIGEN_DIR})
+set(EIGEN_DIR /usr/local/include/eigen3/)
+include_directories(${EIGEN_DIR})
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 find_package(Eigen REQUIRED)
 include_directories(${EIGEN_INCLUDE_DIRS})

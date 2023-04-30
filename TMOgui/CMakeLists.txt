@@ -137,5 +137,5 @@ ADD_EXECUTABLE(${EXE_NAME}
 
 target_link_libraries(tmogui Qt5::Widgets Qt5::PrintSupport)
 add_custom_command( TARGET ${EXE_NAME} POST_BUILD
-  COMMAND cp -r tmogui ../
+  COMMAND cp -r tmogui ../tmogui.exe
 )
